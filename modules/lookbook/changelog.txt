@@ -1,0 +1,44 @@
+Lookbook & Product Sets
+Contact: modules@businesstech.fr
+
+
+Change history for Lookbook & Product Sets
+---------------------------------------
+
+Version 2.1.3 (25/11/2013)
+
+- Added Spanish and Ityalian translations
+
+
+Version 2.1.2 (09/10/2013)
+
+- Fix a css issue.
+- Allow Polish characters for category name and/or lookbook name.
+- Added a new method to handle strange characters.
+- Allow vertical images for lookbooks.
+
+Version 2.1.1 (18/06/2013)
+
+- Fix a bug with rewriting url setting and links to lookbook categories.
+
+Version 2.1.0 (17/06/2013):
+
+- Added compatibility with PS 1.5.4.
+- Added check for active/inactive products.
+- Enabled by default some template blocks.
+- Fix a bug with combinations and price calculation.
+
+Version 2.0.2 (11/03/2013):
+
+- Added changelog.txt
+- Added some verifications about folder creation when uploading lookbook images.
+- Fix a bug when prices are not updated when an item quantity equals 0 in a product set.
+
+
+Version 2.0.1 (14/01/2013):
+
+- Prestashop >1.5 compatibility
+
+Version 1.1.0 (17/12/2012):
+
+- Original release

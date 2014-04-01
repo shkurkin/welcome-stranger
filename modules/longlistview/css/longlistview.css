@@ -1,0 +1,62 @@
+#longlistview_block_middle{
+    width: 100%;
+    padding-top: 90px;
+}
+.productListBlock{
+    display: inline-block;
+    height: 400px;
+    font-size: 16px;
+    text-align: center;
+    font-family: proximaSemiBold,Georgia, "Lucida Grande", "Rockwell Extra Bold";
+    line-height: 15px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+.prod_name{
+    font-family: proximaSemiBold,Georgia, "Lucida Grande", "Rockwell Extra Bold";
+}    
+.manufacturer{
+    font-size: 10px;
+    font-family: proximaSemiBold,Georgia, "Lucida Grande", "Rockwell Extra Bold";
+}
+.price{
+    font-size: 12px;
+    font-family: proximaBold,Georgia, "Lucida Grande", "Rockwell Extra Bold";
+}
+
+.productListBlockHeader{
+    display: inline-block;
+    height: 400px;
+}
+
+.innerTable{
+    display: table;
+    text-align: center;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.categorySpanner{
+    display: table-cell;
+    vertical-align:middle;
+    height:300px;
+}
+
+.categoryText{
+    font-size: 20px;
+    border-top: 3px solid #bdbdbd;
+    border-bottom: 3px solid #bdbdbd;
+    color: #bdbdbd;
+    font-family: proximaRegular;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.dividerImage img{
+    margin: auto;
+}
+
+.padded {
+    margin-top: 5px;
+}

@@ -1,0 +1,38 @@
+/* CMS pages ****************************************************************************** */
+#cms #center_column ul,
+#cms #center_column ol,
+#cms #center_column dl { margin-left:25px; margin-bottom:20px }
+
+#cms #center_column li { margin-bottom:5px }
+
+#map_canvas {
+    width: 500px;
+    height: 400px;
+}
+
+#contactInfo {
+    display:inline-block;
+    float: left;
+    font-family: proximaRegular, arial;
+}
+
+.contactHeader{
+    font-family: proximaBold;
+}
+
+#contactLead{
+    font-family: proximaRegular, Arial;
+    font-size: 24px;
+    color: #bbbbbd;
+    width: 100%;
+    border-bottom: 2px solid #dfdfdf;
+    margin-bottom:20px;
+    padding-bottom: 5px;
+}
+
+#map{
+    display: inline-block;
+    float: right;
+    padding-left: 10px;
+    margin-left: 10px;
+}

@@ -1,0 +1,1 @@
+<div class="alert error">{l s='For performance reasons, this module cannot be configured within a shop group or all shop  context. You must configure or export it one shop at a time.' mod='lookbook'}</div>

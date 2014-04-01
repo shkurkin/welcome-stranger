@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <module>
+            <name>lookbook</name>
+            <displayName><![CDATA[Lookbook]]></displayName>
+            <version><![CDATA[2.1.3]]></version>
+            <description><![CDATA[This module helps you to create lookbooks of assorted products]]></description>
+            <author><![CDATA[Business Tech]]></author>
+            <tab><![CDATA[front_office_features]]></tab>
+            <is_configurable>1</is_configurable>
+            <need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+        </module>
