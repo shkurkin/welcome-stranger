@@ -14,7 +14,7 @@
 }
 .prod_name{
     font-family: proximaSemiBold,Georgia, "Lucida Grande", "Rockwell Extra Bold";
-}    
+}
 .manufacturer{
     font-size: 10px;
     font-family: proximaSemiBold,Georgia, "Lucida Grande", "Rockwell Extra Bold";
@@ -41,6 +41,7 @@
     display: table-cell;
     vertical-align:middle;
     height:300px;
+    width: 300px;
 }
 
 .categoryText{
