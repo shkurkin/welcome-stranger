@@ -70,21 +70,21 @@
                         {/if}
 
                         <div id="gridWrapper" class="container-fluid">
-                            <div class="row">
+                            <!-- <div class="row"> -->
                             <!-- Left -->
-                            <div id="left_column" class="col-md-2 col-lg-2">
+<!--                             <div id="left_column" class="col-md-2 col-lg-2">
                                     {$HOOK_LEFT_COLUMN}
-                            </div>
+                            </div> -->
 
                             <!-- Center -->
-                            <div id="page" class="col-md-8 col-lg-8 clearfix">
+                            <div id="page" class="col-md-12 col-lg-12 clearfix">
                                 <!-- Header -->
                                 <div class="row">
                                     <div id="header" class="col-md-12 col-lg-12">
                                             {$HOOK_TOP}
                                     </div>
 
-                                    <!-- CenterColumn --> 
+                                    <!-- CenterColumn -->
                                     <div id="columns" class="col-md-12 col-lg-12 clearfix">
                                         <div class="row">
                                             <!-- Center -->

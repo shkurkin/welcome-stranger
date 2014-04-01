@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.14, created on 2014-04-01 15:16:10
+<?php /* Smarty version Smarty-3.1.14, created on 2014-04-01 18:51:46
          compiled from "/Applications/prestashop-1.6.0.5-1/apps/prestashop/htdocs/themes/welcoming/header.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:1203158806533b107a01b885-94974343%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'fd7a8ee72726098c8c729af7f6e2c2a7edcad8c8' => 
     array (
       0 => '/Applications/prestashop-1.6.0.5-1/apps/prestashop/htdocs/themes/welcoming/header.tpl',
-      1 => 1396377922,
+      1 => 1396392705,
       2 => 'file',
     ),
   ),
@@ -15,6 +15,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.14',
+  'unifunc' => 'content_533b107a110e40_58063050',
   'variables' => 
   array (
     'lang_iso' => 0,
@@ -41,8 +43,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'HOOK_TOP' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.14',
-  'unifunc' => 'content_533b107a110e40_58063050',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_533b107a110e40_58063050')) {function content_533b107a110e40_58063050($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_escape')) include '/Applications/prestashop-1.6.0.5-1/apps/prestashop/htdocs/tools/smarty/plugins/modifier.escape.php';
 ?>
@@ -121,15 +121,15 @@ $_smarty_tpl->tpl_vars['media']->_loop = true;
                         <?php }?>
 
                         <div id="gridWrapper" class="container-fluid">
-                            <div class="row">
+                            <!-- <div class="row"> -->
                             <!-- Left -->
-                            <div id="left_column" class="col-md-2 col-lg-2">
+<!--                             <div id="left_column" class="col-md-2 col-lg-2">
                                     <?php echo $_smarty_tpl->tpl_vars['HOOK_LEFT_COLUMN']->value;?>
 
-                            </div>
+                            </div> -->
 
                             <!-- Center -->
-                            <div id="page" class="col-md-8 col-lg-8 clearfix">
+                            <div id="page" class="col-md-12 col-lg-12 clearfix">
                                 <!-- Header -->
                                 <div class="row">
                                     <div id="header" class="col-md-12 col-lg-12">
@@ -137,7 +137,7 @@ $_smarty_tpl->tpl_vars['media']->_loop = true;
 
                                     </div>
 
-                                    <!-- CenterColumn --> 
+                                    <!-- CenterColumn -->
                                     <div id="columns" class="col-md-12 col-lg-12 clearfix">
                                         <div class="row">
                                             <!-- Center -->
