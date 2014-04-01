@@ -22,15 +22,13 @@
                         </a>
                     </div>
                 {/foreach}
+                {if isset($product['catLink'])}
+                    <div class="dividerImage col-md-12">
+                        <img src="{$product['catLink']}"/>
+                    </div>
+                {/if}
             </div>
         </div>
-        {if isset($product['catLink'])}
-            <div class="row">
-                <div class="dividerImage col-lg-12">
-                    <img src="{$product['catLink']}"/>
-                </div>
-            </div>
-        {/if}
 
         {/foreach}
     </div>
