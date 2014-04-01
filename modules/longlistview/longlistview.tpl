@@ -2,7 +2,8 @@
 <div id="longlistview_block_middle" class="block">
     <div class="block_content">
         {foreach $categoryMap as $category => $catArray}
-               <div class="row padded">
+        <div class="row padded">
+            <div class="col-md-8 col-centered">
                <div id="a{$category|upper}" class="productListBlockHeader col-lg-4">
                    <div class="innerTable">
                         <div class="categorySpanner">
@@ -21,17 +22,17 @@
                         </a>
                     </div>
                 {/foreach}
-                {if isset($product['catLink'])}
-                    </div>
-                    <div class="row">
-                        <div class="dividerImage col-lg-12">
-                            <img src="{$product['catLink']}"/>
-                        </div>
-                    </div>
-                {/if}
-
+            </div>
+        </div>
+        {if isset($product['catLink'])}
+            <div class="row">
+                <div class="dividerImage col-lg-12">
+                    <img src="{$product['catLink']}"/>
+                </div>
+            </div>
+        {/if}
 
         {/foreach}
-        </div>
+    </div>
 </div>
 <!-- /Block longlistview -->
