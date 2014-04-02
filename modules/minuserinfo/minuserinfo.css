@@ -72,10 +72,10 @@
     padding-bottom: 35px;}
 
 .minsearch{
-    display: none;
-    opacity: 0;
-    width: 0px;
-    margin-top:3px;
+    width: 105px;
+    position: absolute;
+    margin-top: 8px;
+    left: 0;
 }
 
 /* searchbar */

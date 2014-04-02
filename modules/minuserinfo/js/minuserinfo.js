@@ -2,10 +2,9 @@
  * Created by nathanielhillen on 2/3/14.
  */
 $(document).ready(function() {
-    $('#stickyWrapper').affix({
-        offset: {
-            top: 100
-        }
+    $('.minsearch').hide();
+    $('#search_bar').on('click', function() {
+        $('.minsearch').toggle();
     })
 });
 
@@ -51,21 +50,21 @@ $(document).ready(function() {
     }
 });
 
-function expandSearch(){
-    var findBar = $("#min_search_query_top");
-    var navWidth = $('#stickyinfo').width();
-    console.log($(findBar).is(":visible"));
-    if($(findBar).width() > 0){
-        return;
-    } else {
-        findBar.show();
-        findBar.animate({ width: navWidth, opacity: 1 }, 'fast');
-        findBar.blur(function(){
-        /* lookup the original width */
-        $(this).animate({ width: -1, opacity: 0 }, 'fast');
-        });
-        findBar.focus();
-    }
-}
+// function expandSearch(){
+//     var findBar = $("#min_search_query_top");
+//     var navWidth = $('#stickyinfo').width();
+//     console.log($(findBar).is(":visible"));
+//     if($(findBar).width() > 0){
+//         return;
+//     } else {
+//         findBar.show();
+//         findBar.animate({ width: navWidth, opacity: 1 }, 'fast');
+//         findBar.blur(function(){
+//         /* lookup the original width */
+//         $(this).animate({ width: -1, opacity: 0 }, 'fast');
+//         });
+//         findBar.focus();
+//     }
+// }
 
 

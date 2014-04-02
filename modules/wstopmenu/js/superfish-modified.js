@@ -9,7 +9,8 @@ $(document).ready(function() {
         var menu = document.getElementById("mainNavDropdown");
         var rightCol = document.getElementById("right_column");
         if (window.pageYOffset > (WStop + WSelementHeight)) {
-            if($('#mainNavToggle').hasClass('navSlide')) {
+            if($('#mainNavToggle').hasClass('navSlide') &&
+                window.pageYOffset < (WStop + WSelementHeight + 150)) {
                $('#mainNavToggle').removeClass('navSlide');
                 $( "#mainNavToggle" ).animate({
                     left: "+=100",
