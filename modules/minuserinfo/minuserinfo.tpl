@@ -24,56 +24,55 @@
 *}
 
 <!-- Block user information module HEADER -->
-<div id="header_user" {if $PS_CATALOG_MODE}class="header_user_catalog"{/if}>
-    <div class="row">
-        <div id="signInBlock" class="col-lg-12">
-            <p id="header_user_info">
-                {if $logged}
-                    <a href="{$link->getPageLink('my-account', true)|escape:'html'}" title="{l s='View my customer account' mod='minuserinfo'}" class="account" rel="nofollow"><span>{$cookie->customer_firstname} {$cookie->customer_lastname}</span></a>
-                    <a href="{$link->getPageLink('index', true, NULL, "mylogout")|escape:'html'}" title="{l s='Log me out' mod='minuserinfo'}" class="logout" rel="nofollow">{l s='Log out' mod='minuserinfo'}</a>
-                {else}
-                    <a href="{$link->getPageLink('my-account', true)|escape:'html'}" title="{l s='Login to your customer account' mod='minuserinfo'}" class="login" rel="nofollow">{l s='SIGN IN' mod='minuserinfo'}</a>
-                {/if}
-            </p>
+<div id="userFunctions">
+    <div id="header_user" {if $PS_CATALOG_MODE}class="header_user_catalog"{/if}>
+            <div id="signInBlock" >
+                <p id="header_user_info">
+                    {if $logged}
+                        <a href="{$link->getPageLink('my-account', true)|escape:'html'}" title="{l s='View my customer account' mod='minuserinfo'}" class="account" rel="nofollow"><span>{$cookie->customer_firstname} {$cookie->customer_lastname}</span></a>
+                        <a href="{$link->getPageLink('index', true, NULL, "mylogout")|escape:'html'}" title="{l s='Log me out' mod='minuserinfo'}" class="logout" rel="nofollow">{l s='Log out' mod='minuserinfo'}</a>
+                    {else}
+                        <a href="{$link->getPageLink('my-account', true)|escape:'html'}" title="{l s='Login to your customer account' mod='minuserinfo'}" class="login" rel="nofollow">{l s='SIGN IN' mod='minuserinfo'}</a>
+                    {/if}
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="row affix-top" id="stickyWrapper">
-    <div id="stickyinfo" class="col-lg-12">
-	<ul id="header_nav">
-		{if !$PS_CATALOG_MODE}
-                <li id="search_bar">
-                    <a href="#" onclick="expandSearch();"></a>
-                </li>
-		<li id="shopping_cart">
-			<a href="{$link->getPageLink($order_process, true)|escape:'html'}" title="{l s='View my shopping cart' mod='minuserinfo'}" rel="nofollow">
-			<span class="ajax_cart_quantity{if $cart_qties == 0} hidden{/if}">{$cart_qties}</span>
-			<span class="ajax_cart_product_txt{if $cart_qties != 1} hidden{/if}">{l s='Product' mod='minuserinfo'}</span>
-			<span class="ajax_cart_product_txt_s{if $cart_qties < 2} hidden{/if}">{l s='Products' mod='minuserinfo'}</span>
-			<span class="ajax_cart_total{if $cart_qties == 0} hidden{/if}">
-				{if $cart_qties > 0}
-					{if $priceDisplay == 1}
-						{assign var='blockuser_cart_flag' value='Cart::BOTH_WITHOUT_SHIPPING'|constant}
-						{convertPrice price=$cart->getOrderTotal(false, $blockuser_cart_flag)}
-					{else}
-						{assign var='blockuser_cart_flag' value='Cart::BOTH_WITHOUT_SHIPPING'|constant}
-						{convertPrice price=$cart->getOrderTotal(true, $blockuser_cart_flag)}
-					{/if}
-				{/if}
-			</span>
-			<span class="ajax_cart_no_product{if $cart_qties > 0} hidden{/if}"> </span>
-			</a>
-		</li>
-		{/if}
-		<li id="your_account"><a href="{$link->getPageLink('my-account', true)|escape:'html'}" title="{l s='View my customer account' mod='minuserinfo'}" rel="nofollow">{l s='Your Account' mod='minuserinfo'}</a></li>
-	</ul>
-    </div>
-        <div class="col-lg-12">
-            <form method="get" action="{$link->getPageLink('search', true)|escape:'html'}" id="searchbox">
-                            <input type="hidden" name="controller" value="search">
-                            <input type="hidden" name="orderby" value="position">
-                            <input type="hidden" name="orderway" value="desc">
-                            <input class="minsearch" type="text" id="min_search_query_top" name="search_query" value="" autocomplete="off">
-                        </form>
+    	<div id="header_nav">
+    		{if !$PS_CATALOG_MODE}
+            <div id="search_bar" class="userInfoIcon">
+                <a href="#" onclick="expandSearch();"></a>
+            </div>
+    		<div id="shopping_cart" class="userInfoIcon">
+    			<a href="{$link->getPageLink($order_process, true)|escape:'html'}" title="{l s='View my shopping cart' mod='minuserinfo'}" rel="nofollow">
+    			<span class="ajax_cart_quantity{if $cart_qties == 0} hidden{/if}">{$cart_qties}</span>
+    			<span class="ajax_cart_product_txt{if $cart_qties != 1} hidden{/if}">{l s='Product' mod='minuserinfo'}</span>
+    			<span class="ajax_cart_product_txt_s{if $cart_qties < 2} hidden{/if}">{l s='Products' mod='minuserinfo'}</span>
+    			<span class="ajax_cart_total{if $cart_qties == 0} hidden{/if}">
+    				{if $cart_qties > 0}
+    					{if $priceDisplay == 1}
+    						{assign var='blockuser_cart_flag' value='Cart::BOTH_WITHOUT_SHIPPING'|constant}
+    						{convertPrice price=$cart->getOrderTotal(false, $blockuser_cart_flag)}
+    					{else}
+    						{assign var='blockuser_cart_flag' value='Cart::BOTH_WITHOUT_SHIPPING'|constant}
+    						{convertPrice price=$cart->getOrderTotal(true, $blockuser_cart_flag)}
+    					{/if}
+    				{/if}
+    			</span>
+    			<span class="ajax_cart_no_product{if $cart_qties > 0} hidden{/if}"> </span>
+    			</a>
+    		</div>
+            <div id="your_account" class="userInfoIcon"><a href="{$link->getPageLink('my-account', true)|escape:'html'}" title="{l s='View my customer account' mod='minuserinfo'}" rel="nofollow"><img src="http://www.iconsdb.com/icons/preview/black/circle-outline-xxl.png" width="19"></a></div>
+    		{/if}
+    	</div>
+        </div>
+            <div class="col-lg-12">
+                <form method="get" action="{$link->getPageLink('search', true)|escape:'html'}" id="searchbox">
+                                <input type="hidden" name="controller" value="search">
+                                <input type="hidden" name="orderby" value="position">
+                                <input type="hidden" name="orderway" value="desc">
+                                <input class="minsearch" type="text" id="min_search_query_top" name="search_query" value="" autocomplete="off">
+                            </form>
+            </div>
         </div>
     </div>
 </div>

@@ -2396,8 +2396,39 @@ body#index #right_column #left_column {display:none}
 #left_column {
 	display: none;
 }
+
 /* end HACKKK*/
+
 #header {
 	margin-top: 29px;
 	margin-bottom: 3px;
+}
+
+
+/**********
+ User Info
+***********/
+
+#right_column {
+	position: absolute;
+	position: absolute;
+	right: 0;
+}
+
+#your_account {
+	list-style-type: none;
+	display: inline-block;
+	float: left;
+}
+
+#your_account a img {
+	margin-top: -2px;
+}
+
+#search_bar {
+	float: left;
+}
+
+#shopping_cart {
+	float: left;
 }

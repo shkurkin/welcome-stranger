@@ -32,9 +32,6 @@
                     </div><!--end id=page -->
 
                      <!-- Right -->
-                    <div id="right_column" class="col-md-2 col-lg-2">
-                            {$HOOK_RIGHT_COLUMN}
-                    </div>
                 </div>
 
                 <!-- Footer -->

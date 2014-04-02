@@ -67,5 +67,5 @@ function expandSearch(){
         findBar.focus();
     }
 }
-        
+
 

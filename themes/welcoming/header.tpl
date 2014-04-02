@@ -75,6 +75,10 @@
                             {$HOOK_LEFT_COLUMN}
                         </div>
 
+                        <div id="right_column">
+                            {$HOOK_RIGHT_COLUMN}
+                        </div>
+
 
                             <!-- Center -->
                             <div id="page" class="col-md-12 col-lg-12 clearfix">
@@ -102,8 +106,9 @@
                                           </ul>
                                         </div>
                                         <!-- /MAIN DROPDOWN NAV -->
-
-
+                                        <!-- LOGO -->
+                                            {$HOOK_TOP}
+                                        <!-- /LOGO -->
                                     </div>
 
                                     <!-- CenterColumn -->
