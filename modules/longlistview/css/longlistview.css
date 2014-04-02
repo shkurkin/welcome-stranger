@@ -54,8 +54,10 @@
     padding-bottom: 8px;
 }
 
-.dividerImage img{
+.dividerImage img {
     margin: auto;
+    margin-left: -5px;
+    width: 941px;
 }
 
 .padded {

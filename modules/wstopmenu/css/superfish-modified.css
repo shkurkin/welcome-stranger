@@ -183,7 +183,11 @@ li.sf-search input {
     border-bottom: 0px;
 }
 
-#navWrapper{
-    padding-top: 10px;
-    font-family: proximaBold;
+#navWrapper {
+  padding-top: 10px;
+  font-family: proximaBold;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  background: white;
 }
