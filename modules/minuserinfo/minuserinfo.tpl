@@ -61,7 +61,7 @@
     			<span class="ajax_cart_no_product{if $cart_qties > 0} hidden{/if}"> </span>
     			</a>
     		</div>
-            <div id="your_account" class="userInfoIcon"><a href="{$link->getPageLink('my-account', true)|escape:'html'}" title="{l s='View my customer account' mod='minuserinfo'}" rel="nofollow"><img src="http://www.iconsdb.com/icons/preview/black/circle-outline-xxl.png" width="19"></a></div>
+            <div id="your_account" class="userInfoIcon"><a href="{$link->getPageLink('my-account', true)|escape:'html'}" title="{l s='View my customer account' mod='minuserinfo'}" rel="nofollow"><img src="http://www.iconsdb.com/icons/preview/black/circle-outline-xxl.png" width="18"></a></div>
     		{/if}
     	</div>
         </div>

@@ -21,7 +21,7 @@
 .lt-ie6 #shopping_cart {width: 130px;}
 #shopping_cart a{
 	height: 15px;
-	padding:0px 2px 5px 90px;
+	padding:0px 2px 5px 55px;
 	background: url('img/icon/azalea_icon_cart.png') no-repeat 23px 17px;
     background-position:center;
     -moz-border-radius: 3px;
@@ -39,7 +39,8 @@
 /* user infos */
 #header_user_info {
 	clear:both;
-	margin-top:10px;
+  margin-top:18px;
+	margin-bottom:28px;
 	padding:0;
 	font-size:12px
 }
@@ -55,10 +56,16 @@
 	padding: 0;
 }
 *:first-child+html #header_user_info a {line-height:14px;}
+
 #header_user_info a.login {
     font-family: proximaRegular;
-    padding-bottom: 40px;
+    color: lightgray;
 }
+
+#header_user_info a.login:hover {
+    color: #333 !important;
+}
+
 #header_user_info a.logout {
     background: url('img/icon/logout.png') no-repeat 0px -2px;
     padding-left: 15px;
@@ -75,7 +82,7 @@
 .lt-ie6 #search_bar {width: 130px;}
 #search_bar a{
 	height: 15px;
-	padding:15px 2px 5px 43px;
+	padding:12px 2px 5px 22px;
 	background: url('img/icon/azalea_icon_search.png') no-repeat 23px 17px;
     background-position:center;
     -moz-border-radius: 3px;

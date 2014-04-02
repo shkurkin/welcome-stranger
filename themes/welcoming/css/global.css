@@ -2388,7 +2388,7 @@ body#index #right_column #left_column {display:none}
 }
 
 #mainNavToggle {
-	left: 308px;
+	left: 300px;
 	position: absolute;
 }
 
@@ -2411,8 +2411,8 @@ body#index #right_column #left_column {display:none}
 
 #right_column {
 	position: absolute;
-	position: absolute;
 	right: 0;
+	z-index: 999;
 }
 
 #your_account {
@@ -2422,7 +2422,7 @@ body#index #right_column #left_column {display:none}
 }
 
 #your_account a img {
-	margin-top: -2px;
+	margin-top: -1px;
 }
 
 #search_bar {
