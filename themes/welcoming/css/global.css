@@ -2350,13 +2350,13 @@ body#index #right_column #left_column {display:none}
 #mainNavDropdown {
   font-family: proximaBold;
   font-size: 15px;
-  position: fixed;
+  position: absolute;
   letter-spacing: 1px;
   color: #333;
-  left: -205px;
+  left: -240px;
   padding-left: 45px;
   margin-top: 30px;
-  width: 340px;
+  width: 380px;
 }
 
 #dropdownMenu .featuredMenuBlock {
@@ -2368,9 +2368,9 @@ body#index #right_column #left_column {display:none}
 #dropdownMenu {
 	color: lightgray;
 	background: white;
-	padding-left: 20px;
+	padding-left: 35px;
 	height: 3000px;
-	width: 160px;
+	width: 184px;
 }
 
 #dropdownMenu li {
@@ -2388,6 +2388,16 @@ body#index #right_column #left_column {display:none}
 }
 
 #mainNavToggle {
-	left: 260px;
+	left: 308px;
 	position: absolute;
+}
+
+/* HACKKK */
+#left_column {
+	display: none;
+}
+/* end HACKKK*/
+#header {
+	margin-top: 29px;
+	margin-bottom: 3px;
 }

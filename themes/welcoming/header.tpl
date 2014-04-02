@@ -84,7 +84,7 @@
 
                                         <!-- MAIN DROPDOWN NAV -->
                                         <div id="mainNavDropdown">
-                                          <div id="mainNavToggle"><img src="https://cdn2.iconfinder.com/data/icons/flat-ui-icons-24-px/24/menu-24-512.png" width="12"> MENU</div>
+                                          <div id="mainNavToggle"><img src="https://cdn2.iconfinder.com/data/icons/flat-ui-icons-24-px/24/menu-24-512.png" width="12" id="menuOpenIcon"><img src="https://cdn2.iconfinder.com/data/icons/flat-ui-icons-24-px/24/cross-24-512.png" id="menuCloseIcon" width="12"> MENU</div>
 
                                           <ul id="dropdownMenu">
                                             <div class="featuredMenuBlock">
@@ -103,7 +103,7 @@
                                         </div>
                                         <!-- /MAIN DROPDOWN NAV -->
 
-                                            {$HOOK_TOP}
+
                                     </div>
 
                                     <!-- CenterColumn -->
