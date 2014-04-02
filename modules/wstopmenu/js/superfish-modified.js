@@ -9,6 +9,21 @@ $(document).ready(function() {
         var menu = document.getElementById("mainNavDropdown");
         var rightCol = document.getElementById("right_column");
         if (window.pageYOffset > (WStop + WSelementHeight)) {
+            if($('#mainNavToggle').hasClass('navSlide')) {
+               $('#mainNavToggle').removeClass('navSlide');
+                $( "#mainNavToggle" ).animate({
+                    left: "+=100",
+                  }, 300);
+
+                $( "#mainNavDropdown" ).animate({
+                    left: "-=200",
+                  }, 300, function() {
+                    $('#menuCloseIcon').hide();
+                    $('#menuOpenIcon').show();
+
+                  });
+            }
+
             header.style.position = "fixed";
             header.style.top = "0";
             menu.style.position = "fixed";
@@ -24,26 +39,4 @@ $(document).ready(function() {
             rightCol.style.top = "";
         }
     }
-
-
-//     $('#navWrapper').height($("#nav").height());
-
-//     $('#stickyNav').affix({
-//         offset: 510
-//     });
-
-//     $(".scroll").click(function (event) {
-//     event.preventDefault();
-//     //calculate destination place
-//     var dest = 0;
-//     if ($(this.hash).offset().top > $(document).height() - $(window).height()) {
-//         dest = $(document).height() - $(window).height();
-//     } else {
-//         dest = $(this.hash).offset().top;
-//     }
-//     //go to destination
-//     $('html,body').animate({
-//         scrollTop: dest
-//     }, 2000, 'swing');
-// });
 });
