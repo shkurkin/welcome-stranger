@@ -1,6 +1,18 @@
 $(function() {
-  $('#dropdownMenu').hide();
+
   $('#mainNavToggle').on('click', function(){
-    $('#dropdownMenu').slideToggle('fast');
+    if($('#mainNavToggle').hasClass('navSlide')) {
+      $( "#mainNavDropdown" ).animate({
+          left: "-=150",
+        }, 500, function() {
+          $('#mainNavToggle').toggleClass('navSlide');
+        });
+    } else {
+      $( "#mainNavDropdown" ).animate({
+          left: "+=150",
+        }, 500, function() {
+          $('#mainNavToggle').toggleClass('navSlide');
+        });
+    }
   })
 });

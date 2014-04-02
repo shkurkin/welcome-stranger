@@ -2350,33 +2350,32 @@ body#index #right_column #left_column {display:none}
 #mainNavDropdown {
   font-family: proximaBold;
   font-size: 15px;
-  position: absolute;
+  position: fixed;
   letter-spacing: 1px;
   color: #333;
-  left: -10px;
+  left: -205px;
   padding-left: 45px;
   margin-top: 30px;
+  width: 340px;
 }
 
 #dropdownMenu .featuredMenuBlock {
-	width: 180px;
 	background: white;
 	margin-bottom: 30px;
-}
-
-#dropdownMenu .subMenuBlock {
-	width: 180px;
-	background: white;
 }
 
 
 #dropdownMenu {
 	color: lightgray;
+	background: white;
+	padding-left: 20px;
+	height: 3000px;
+	width: 160px;
 }
 
 #dropdownMenu li {
-	width: 180px;
 	margin-bottom: 10px;
+	list-style: none;
 }
 
 #dropdownMenu li a {
@@ -2386,4 +2385,9 @@ body#index #right_column #left_column {display:none}
 #dropdownMenu li a:hover {
 	color: #333;
 	text-decoration: none;
+}
+
+#mainNavToggle {
+	left: 260px;
+	position: absolute;
 }
