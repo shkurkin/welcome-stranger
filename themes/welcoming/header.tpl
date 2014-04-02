@@ -81,6 +81,26 @@
                                 <!-- Header -->
                                 <div class="row">
                                     <div id="header" class="col-md-12 col-lg-12">
+                                        <!-- MAIN DROPDOWN NAV -->
+                                        <div id="mainNavDropdown">
+                                          <div id="mainNavToggle">MENU</div>
+
+                                          <ul id="dropdownMenu">
+                                            <div class="featuredMenuBlock">
+                                                <li>SHOP</li>
+                                                <li>WS CLOTHING</li>
+                                                <li>LOOKBOOKS</li>
+                                            </div>
+                                            <div class="subMenuBlock">
+                                                <li>Blog</li>
+                                                <li>Trade</li>
+                                                <li>Press</li>
+                                                <li>Contact</li>
+                                                <li>FB IG</li>
+                                            </div>
+                                          </ul>
+                                        </div>
+                                        <!-- /MAIN DROPDOWN NAV -->
                                             {$HOOK_TOP}
                                     </div>
 

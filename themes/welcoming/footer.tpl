@@ -36,7 +36,7 @@
                             {$HOOK_RIGHT_COLUMN}
                     </div>
                 </div>
-                
+
                 <!-- Footer -->
                 <div class="row">
                     <div id="footer" class="col-md-12 col-lg-12 clearfix">
@@ -92,5 +92,6 @@
 	{/foreach}
         <script type="text/javascript" src="{$js_dir}bootstrap.min.js"></script>
 {/if}
+    <script type="text/javascript" src="{$js_dir}ws.js"></script>
     </body>
 </html>

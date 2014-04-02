@@ -2341,3 +2341,14 @@ body#index #right_column #left_column {display:none}
 #center_column{
 	padding-top: 20px;
 }
+
+
+/*******************
+  Main Dropdown Nav
+*******************/
+
+#mainNavDropdown {
+  font-family: proximaBold;
+  font-size: 16px;
+  position: absolute;
+}
