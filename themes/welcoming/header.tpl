@@ -81,26 +81,28 @@
                                 <!-- Header -->
                                 <div class="row">
                                     <div id="header" class="col-md-12 col-lg-12">
+
                                         <!-- MAIN DROPDOWN NAV -->
                                         <div id="mainNavDropdown">
-                                          <div id="mainNavToggle">MENU</div>
+                                          <div id="mainNavToggle"><img src="https://cdn2.iconfinder.com/data/icons/flat-ui-icons-24-px/24/menu-24-512.png" width="12"> MENU</div>
 
                                           <ul id="dropdownMenu">
                                             <div class="featuredMenuBlock">
-                                                <li>SHOP</li>
-                                                <li>WS CLOTHING</li>
-                                                <li>LOOKBOOKS</li>
+                                                <li><a href="#">SHOP</a></li>
+                                                <li><a href="#">WS CLOTHING</a></li>
+                                                <li><a href="#">LOOKBOOKS</a></li>
                                             </div>
                                             <div class="subMenuBlock">
-                                                <li>Blog</li>
-                                                <li>Trade</li>
-                                                <li>Press</li>
-                                                <li>Contact</li>
-                                                <li>FB IG</li>
+                                                <li><a href="#">Blog</a></li>
+                                                <li><a href="#">Trade</a></li>
+                                                <li><a href="#">Press</a></li>
+                                                <li><a href="#">Contact</a></li>
+                                                <li><a href="#">FB IG</a></li>
                                             </div>
                                           </ul>
                                         </div>
                                         <!-- /MAIN DROPDOWN NAV -->
+
                                             {$HOOK_TOP}
                                     </div>
 

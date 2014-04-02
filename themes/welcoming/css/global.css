@@ -2349,6 +2349,41 @@ body#index #right_column #left_column {display:none}
 
 #mainNavDropdown {
   font-family: proximaBold;
-  font-size: 16px;
+  font-size: 15px;
   position: absolute;
+  letter-spacing: 1px;
+  color: #333;
+  left: -10px;
+  padding-left: 45px;
+  margin-top: 30px;
+}
+
+#dropdownMenu .featuredMenuBlock {
+	width: 180px;
+	background: white;
+	margin-bottom: 30px;
+}
+
+#dropdownMenu .subMenuBlock {
+	width: 180px;
+	background: white;
+}
+
+
+#dropdownMenu {
+	color: lightgray;
+}
+
+#dropdownMenu li {
+	width: 180px;
+	margin-bottom: 10px;
+}
+
+#dropdownMenu li a {
+	color: lightgray;
+}
+
+#dropdownMenu li a:hover {
+	color: #333;
+	text-decoration: none;
 }
