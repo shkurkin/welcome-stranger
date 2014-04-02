@@ -2273,7 +2273,7 @@ body#index #right_column #left_column {display:none}
 	font-family: proximaRegular;
 	font-size: 18px;
 	font-weight: normal;
-	text-align: left;
+	text-align: center;
 	background: #ffffff;
 	color: #000000;
 }
@@ -2431,4 +2431,16 @@ body#index #right_column #left_column {display:none}
 
 #shopping_cart {
 	float: left;
+}
+
+/********
+ Footer
+********/
+
+#rowText {
+	margin-bottom: 40px;
+}
+
+#middleText {
+	margin-bottom: 40px;
 }

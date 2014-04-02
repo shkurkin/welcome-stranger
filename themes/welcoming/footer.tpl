@@ -36,7 +36,7 @@
 
                 <!-- Footer -->
                 <div class="row">
-                    <div id="footer" class="col-md-12 col-lg-12 clearfix">
+                    <div id="footer" class="col-md-6 col-centered clearfix">
                         {$HOOK_FOOTER}
                         <div class="row" style="padding-top:42px">
                         <div id="rowText" class="col-lg-4">
