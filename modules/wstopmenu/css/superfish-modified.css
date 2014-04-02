@@ -1,7 +1,9 @@
 /*** ESSENTIAL STYLES ***/
 .sf-contener {
 	clear: both;
-    border-bottom: 1px solid #ccccce;
+  border-bottom: 1px solid #ccccce;
+  width: 940px;
+  margin: 0 auto;
 }
 .sf-right {
   margin-right: 14px;
@@ -10,14 +12,14 @@
 }
 
 .sf-leftmenu {
-    width: 70%;
-    float:left;
+  width: 70%;
+  float:left;
 }
 
 .sf-rightmenu{
-    width:30%;
-    float:right;
-            display:                none;
+  width:30%;
+  float:right;
+  display: none;
 }
 .sf-menu, .sf-menu * {
 	margin:			0;

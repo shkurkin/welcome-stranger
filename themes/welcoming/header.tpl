@@ -70,11 +70,11 @@
                         {/if}
 
                         <div id="gridWrapper" class="container-fluid">
-                            <!-- <div class="row"> -->
-                            <!-- Left -->
-<!--                             <div id="left_column" class="col-md-2 col-lg-2">
-                                    {$HOOK_LEFT_COLUMN}
-                            </div> -->
+
+                        <div id="left_column">
+                            {$HOOK_LEFT_COLUMN}
+                        </div>
+
 
                             <!-- Center -->
                             <div id="page" class="col-md-12 col-lg-12 clearfix">
