@@ -113,6 +113,7 @@
     background-image: none;
 }
 
-#generic-carousel{
+#generic-carousel {
     width: 100%;
+    padding: 0;
 }
