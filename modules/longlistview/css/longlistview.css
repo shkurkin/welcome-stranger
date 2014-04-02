@@ -66,3 +66,16 @@
     float: none;
     margin: 0 auto;
 }
+
+#longlistview_block_middle .category-override {
+    width: 960px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#longlistview_block_middle .product-override {
+    width: 300px;
+    margin: 0 10px;
+    padding-left: 0;
+    padding-right: 0;
+}
