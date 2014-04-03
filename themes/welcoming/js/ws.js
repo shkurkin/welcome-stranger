@@ -5,11 +5,13 @@ $(function() {
     var WSelementHeight = $('#generic-carousel').height();
 
     if($('#mainNavToggle').hasClass('navSlide')) {
-      if (window.pageYOffset > (WStop + WSelementHeight)) {
-        $( ".sf-menu" ).animate({
-            marginLeft: "-=100",
-          }, 300);
-      }
+
+      // fix the slide out of menu here
+      // if (window.pageYOffset > (WStop + WSelementHeight)) {
+      //   $( ".sf-menu" ).animate({
+      //       marginLeft: "-=100",
+      //     }, 300);
+      // }
 
       $( "#mainNavToggle" ).animate({
           left: "+=100",
@@ -25,11 +27,12 @@ $(function() {
         });
     } else {
 
-      if (window.pageYOffset > (WStop + WSelementHeight)) {
-        $( ".sf-menu" ).animate({
-            marginLeft: "+=100",
-          }, 300);
-      }
+      // fix the slide out of menu here
+      // if (window.pageYOffset > (WStop + WSelementHeight)) {
+      //   $( ".sf-menu" ).animate({
+      //       marginLeft: "+=100",
+      //     }, 300);
+      // }
 
       $( "#mainNavToggle" ).animate({
           left: "-=100",
