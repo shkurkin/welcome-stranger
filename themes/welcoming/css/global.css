@@ -724,13 +724,20 @@ ul.idTabs li {
 ************************************************************************************************ */
 
 /* nav bottom ********************************************************************************** */
-#order #left_column , #order-confirmation #left_column {display:none}
-#order #center_column, #order-confirmation #center_column{width:757px}
+#order #left_column , #order-confirmation #left_column {
+	display:none;
+}
+
+#order #center_column, #order-confirmation #center_column {
+	width:757px;
+	float: none;
+	margin: 30px auto 60px auto;
+}
 
 .cart_navigation {margin:20px 0}
 .cart_navigation .exclusive,
 .cart_navigation .exclusive_large {
-	float:right
+	float:right;
 }
 .cart_navigation .button,
 .cart_navigation .button_large {
@@ -2369,7 +2376,7 @@ body#index #right_column #left_column {display:none}
 	color: lightgray;
 	background: white;
 	padding-left: 35px;
-	height: 3000px;
+	height: 1000px;
 	width: 184px;
 }
 
