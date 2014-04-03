@@ -40,7 +40,7 @@
     	<div id="header_nav">
     		{if !$PS_CATALOG_MODE}
             <div id="search_bar" class="userInfoIcon">
-                <a href="#" onclick="expandSearch();"></a>
+                <a href="#"></a>
             </div>
     		<div id="shopping_cart" class="userInfoIcon">
     			<a href="{$link->getPageLink($order_process, true)|escape:'html'}" title="{l s='View my shopping cart' mod='minuserinfo'}" rel="nofollow">
@@ -61,7 +61,6 @@
     			<span class="ajax_cart_no_product{if $cart_qties > 0} hidden{/if}"> </span>
     			</a>
     		</div>
-            <div id="your_account" class="userInfoIcon"><a href="{$link->getPageLink('my-account', true)|escape:'html'}" title="{l s='View my customer account' mod='minuserinfo'}" rel="nofollow"><img src="http://www.iconsdb.com/icons/preview/black/circle-outline-xxl.png" width="18"></a></div>
     		{/if}
     	</div>
         </div>
@@ -70,7 +69,7 @@
                                 <input type="hidden" name="controller" value="search">
                                 <input type="hidden" name="orderby" value="position">
                                 <input type="hidden" name="orderway" value="desc">
-                                <input class="minsearch" type="text" id="min_search_query_top" name="search_query" value="" autocomplete="off">
+                                <input class="minsearch" type="text" id="min_search_query_top" name="search_query" value="" autocomplete="off" placeholder=" Search">
                             </form>
             </div>
         </div>

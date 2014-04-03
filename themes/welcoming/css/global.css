@@ -716,7 +716,11 @@ ul.idTabs li {
 				PAGE AUTHENTIFICATION
 ************************************************************************************************ */
 #authentication #left_column {display:none}
-#authentication #center_column{width:757px}
+#authentication #center_column{
+	width:757px;
+	float: none;
+	margin: 15px auto 65px auto;
+}
 
 
 /* ************************************************************************************************
@@ -2363,7 +2367,7 @@ body#index #right_column #left_column {display:none}
   left: -240px;
   padding-left: 15px;
   margin-top: 30px;
-  width: 380px;
+  width: 241px;
 }
 
 #dropdownMenu .featuredMenuBlock {
@@ -2398,6 +2402,7 @@ body#index #right_column #left_column {display:none}
 #mainNavToggle {
 	left: 300px;
 	position: absolute;
+	width: 100px;
 }
 
 /* HACKKK */

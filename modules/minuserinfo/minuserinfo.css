@@ -21,7 +21,7 @@
 .lt-ie6 #shopping_cart {width: 130px;}
 #shopping_cart a{
 	height: 15px;
-	padding:0px 2px 5px 55px;
+	padding:0px 2px 5px 24px;
 	background: url('img/icon/azalea_icon_cart.png') no-repeat 23px 17px;
     background-position:center;
     -moz-border-radius: 3px;
@@ -74,15 +74,15 @@
 .minsearch{
     width: 105px;
     position: absolute;
-    margin-top: 8px;
-    left: 0;
+    margin-top: -15px;
+    left: -101px;
 }
 
 /* searchbar */
 .lt-ie6 #search_bar {width: 130px;}
 #search_bar a{
 	height: 15px;
-	padding:12px 2px 5px 22px;
+	padding:12px 2px 5px 53px;
 	background: url('img/icon/azalea_icon_search.png') no-repeat 23px 17px;
     background-position:center;
     -moz-border-radius: 3px;
