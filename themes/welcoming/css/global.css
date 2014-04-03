@@ -2446,6 +2446,11 @@ body#index #right_column #left_column {display:none}
 	float: left;
 }
 
+#header_nav {
+	float: right;
+}
+
+
 /********
  Footer
 ********/

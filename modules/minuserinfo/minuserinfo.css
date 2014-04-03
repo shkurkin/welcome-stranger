@@ -32,6 +32,13 @@
 #header_user #shopping_cart .ajax_cart_total { display:none !important; }
 #shopping_cart{display: inline-block;}
 
+#shopping_cart > a > span.ajax_cart_quantity {
+  position: absolute;
+  font-family: proximaBold;
+  margin: 1px;
+  font-size: 13px;
+}
+
 /* account */
 #header_user #your_account {display:none;}
 #header_user #your_account a { background-image: url('img/icon/my-account.gif') }
@@ -69,7 +76,7 @@
 #header_user_info a.logout {
     background: url('img/icon/logout.png') no-repeat 0px -2px;
     padding-left: 15px;
-    padding-bottom: 35px;}
+}
 
 .minsearch{
     width: 105px;
@@ -100,3 +107,4 @@
     padding-top: 5px;
     right: 25px;
 }
+

@@ -50,21 +50,3 @@ $(document).ready(function() {
     }
 });
 
-// function expandSearch(){
-//     var findBar = $("#min_search_query_top");
-//     var navWidth = $('#stickyinfo').width();
-//     console.log($(findBar).is(":visible"));
-//     if($(findBar).width() > 0){
-//         return;
-//     } else {
-//         findBar.show();
-//         findBar.animate({ width: navWidth, opacity: 1 }, 'fast');
-//         findBar.blur(function(){
-//         /* lookup the original width */
-//         $(this).animate({ width: -1, opacity: 0 }, 'fast');
-//         });
-//         findBar.focus();
-//     }
-// }
-
-

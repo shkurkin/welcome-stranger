@@ -45,9 +45,9 @@
     		<div id="shopping_cart" class="userInfoIcon">
     			<a href="{$link->getPageLink($order_process, true)|escape:'html'}" title="{l s='View my shopping cart' mod='minuserinfo'}" rel="nofollow">
     			<span class="ajax_cart_quantity{if $cart_qties == 0} hidden{/if}">{$cart_qties}</span>
-    			<span class="ajax_cart_product_txt{if $cart_qties != 1} hidden{/if}">{l s='Product' mod='minuserinfo'}</span>
-    			<span class="ajax_cart_product_txt_s{if $cart_qties < 2} hidden{/if}">{l s='Products' mod='minuserinfo'}</span>
-    			<span class="ajax_cart_total{if $cart_qties == 0} hidden{/if}">
+    			<span class="ajax_cart_product_txt hidden{if $cart_qties != 1} hidden{/if}">{l s='Product' mod='minuserinfo'}</span>
+    			<span class="ajax_cart_product_txt_s hidden{if $cart_qties < 2} hidden{/if}">{l s='Products' mod='minuserinfo'}</span>
+    			<span class="ajax_cart_total hidden{if $cart_qties == 0} hidden{/if}">
     				{if $cart_qties > 0}
     					{if $priceDisplay == 1}
     						{assign var='blockuser_cart_flag' value='Cart::BOTH_WITHOUT_SHIPPING'|constant}

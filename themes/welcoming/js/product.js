@@ -74,7 +74,7 @@ function addCombination(idCombination, arrayOfIdAttributes, quantity, price, eco
 // search the combinations' case of attributes and update displaying of availability, prices, ecotax, and image
 function findCombination(firstTime)
 {
-    
+
 	$('#minimal_quantity_wanted_p').fadeOut();
 	$('#quantity_wanted').val(1);
 	//create a temporary 'choice' array containing the choices of the customer
@@ -127,7 +127,7 @@ function findCombination(firstTime)
 
 			//get available_date for combination product
 			selectedCombination['available_date'] = combinations[combination]['available_date'];
-			
+
 			//update the display
 			updateDisplay();
 
@@ -162,7 +162,7 @@ function updateDisplay()
 
 		//hide the hook out of stock
 		$('#oosHook').hide();
-		
+
 		$('#availability_date').fadeOut();
 
 		//availability value management
@@ -228,7 +228,7 @@ function updateDisplay()
 			$('#availability_value').text(doesntExistNoMore + (globalQuantity > 0 ? ' ' + doesntExistNoMoreBut : '')).addClass('warning_inline');
 		else
 		{
-			$('#availability_value').text(doesntExist).addClass('warning_inline');
+			// $('#availability_value').text(doesntExist).addClass('warning_inline');
 			$('#oosHook').hide();
 		}
 		if(stock_management == 1 && !allowBuyWhenOutOfStock)
@@ -296,7 +296,7 @@ function updateDisplay()
 		var priceTaxExclWithoutGroupReduction = '';
 
 		// retrieve price without group_reduction in order to compute the group reduction after
-		// the specific price discount (done in the JS in order to keep backward compatibility)		
+		// the specific price discount (done in the JS in order to keep backward compatibility)
 		priceTaxExclWithoutGroupReduction = ps_round(productPriceTaxExcluded, 6) * (1 / group_reduction);
 
 		var tax = (taxRate / 100) + 1;
@@ -407,7 +407,7 @@ function updateDisplay()
 		else
 			productPricePretaxed = productPriceDisplay;
 		$('#pretaxe_price_display').text(formatCurrency(productPricePretaxed, currencyFormat, currencySign, currencyBlank));
-		// Unit price 
+		// Unit price
 		productUnitPriceRatio = parseFloat(productUnitPriceRatio);
 		if (productUnitPriceRatio > 0 )
 		{
@@ -435,13 +435,13 @@ function displayImage(domAAroundImgThumb, no_animation)
 		if ($('#bigpic').prop('src') != new_src)
 		{
 			$('#bigpic').prop({
-				'src' : new_src, 
-				'alt' : new_title, 
+				'src' : new_src,
+				'alt' : new_title,
 				'title' : new_title
 			}).load(function(){
 				if (typeof(jqZoomEnabled) != 'undefined' && jqZoomEnabled)
 					$(this).prop('rel', new_href);
-			}); 
+			});
 		}
 		$('#views_block li a').removeClass('shown');
 		$(domAAroundImgThumb).addClass('shown');
@@ -611,8 +611,8 @@ function submitPublishProduct(url, redirect, token)
 	$.ajaxSetup({async: false});
 	$.post(url + '/index.php', {
 		action:'publishProduct',
-		id_product: id_product, 
-		status: 1, 
+		id_product: id_product,
+		status: 1,
 		redirect: redirect,
 		ajax: 1,
 		tab: 'AdminProducts',
@@ -743,12 +743,7 @@ function checkUrl()
 }
 
 $(document).ready(function(){
-    $('#pb-left-column').affix({
-        offset: {
-            top: 214
-        }
-    });
-    
+
     $('#breadcrumb').affix({
         offset: {
             top: 180

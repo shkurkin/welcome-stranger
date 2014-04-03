@@ -34,7 +34,9 @@
 }
 #account-creation_form p.radio input {
 	position: relative;
-	bottom: -3px;
+	bottom: 1px;
+	float: none;
+	margin: 0 2px 0 0;
 }
 #account-creation_form p.checkbox label {
 	float:none;

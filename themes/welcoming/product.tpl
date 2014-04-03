@@ -140,17 +140,17 @@
                                                                                         available_date['date'] = '{$combination.available_date}';
                                                                                         available_date['date_formatted'] = '{dateFormat date=$combination.available_date full=false}';
                                                                                         addCombination({$idCombination|intval}, new Array({$combination.list}), {$combination.quantity}, {$combination.price}, {$combination.ecotax}, {$combination.id_image}, '{$combination.reference|addslashes}', {$combination.unit_impact}, {$combination.minimal_quantity}, available_date, specific_price_combination);
-                                                                                        
+
                                                                                         {if $combination.quantity <= 0}
                                                                                             {$badImages[$combination.id_image] = 1}
                                                                                                 {$badColor[$combination.attributes[0]] = 1}
                                                                                                     {/if}
-                                                                                                     
+
             {/foreach}
         {/if}
-        
+
         {if isset($attributesCombinations)}
-                                                                                        
+
             {foreach from=$attributesCombinations key=id item=aC}
                                                                                         tabInfos = new Array();
                                                                                         tabInfos['id_attribute'] = '{$aC.id_attribute|intval}';
@@ -160,11 +160,11 @@
                                                                                         attributesCombinations.push(tabInfos);
             {/foreach}
         {/if}
-         
+
 });
     </script>
 
-    <div id="primary_block" class="col-lg-12 clearBoth">
+    <div id="primary_block" class="col-centered clearBoth">
 
         {if isset($adminActionDisplay) && $adminActionDisplay}
             <div id="admin-action">
@@ -191,7 +191,7 @@
             <div id="image-block">
                 {if $have_image}
                     <span id="view_full_size">
-                        <img src="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'large_default')|escape:'html'}"{if $jqZoomEnabled && $have_image} class="jqzoom"{/if} title="{if !empty($cover.legend)}{$cover.legend|escape:'htmlall':'UTF-8'}{else}{$product->name|escape:'htmlall':'UTF-8'}{/if}" alt="{if !empty($cover.legend)}{$cover.legend|escape:'htmlall':'UTF-8'}{else}{$product->name|escape:'htmlall':'UTF-8'}{/if}" id="bigpic" width="{$largeSize.width}" height="{$largeSize.height}"/>				
+                        <img src="{$link->getImageLink($product->link_rewrite, $cover.id_image, 'large_default')|escape:'html'}"{if $jqZoomEnabled && $have_image} class="jqzoom"{/if} title="{if !empty($cover.legend)}{$cover.legend|escape:'htmlall':'UTF-8'}{else}{$product->name|escape:'htmlall':'UTF-8'}{/if}" alt="{if !empty($cover.legend)}{$cover.legend|escape:'htmlall':'UTF-8'}{else}{$product->name|escape:'htmlall':'UTF-8'}{/if}" id="bigpic" width="{$largeSize.width}" height="{$largeSize.height}"/>
                     </span>
                 {else}
                     <span id="view_full_size">
@@ -361,7 +361,7 @@
                         {/if}
                     {/foreach}
                 </div>
-            {/if}        
+            {/if}
 </div>
     </div>
     </div>
