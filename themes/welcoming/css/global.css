@@ -1480,7 +1480,11 @@ a.iframe {font-weight:bold}
 				PAGE ADRESSES
 ************************************************************************************************ */
 #addresses #left_column {display:none}
-#addresses #center_column{width:757px}
+#addresses #center_column {
+	width: 757px;
+	float: none;
+	margin: 0 auto 40px auto;
+}
 
 #address p.inline-infos {
 	margin:0 0 0 265px !important;
@@ -1572,7 +1576,11 @@ a.iframe {font-weight:bold}
 				PAGE ORDER-SPLIP
 ************************************************************************************************ */
 #order-slip #left_column {display:none}
-#order-slip #center_column{width:757px}
+#order-slip #center_column {
+	width: 757px;
+	float: none;
+	margin: 0 auto 40px auto;
+}
 
 #order-slip #order-list {border-bottom:1px solid #999}
 #order-slip #order-list td {
@@ -2261,6 +2269,11 @@ body#index #right_column #left_column {display:none}
 	font-family: proximaSemiBold;
 	text-transform: uppercase;
 	margin-right: 10px;
+	display: none;
+}
+
+#product #backlink {
+	display: inline;
 }
 
 #currentlink{
@@ -2271,7 +2284,7 @@ body#index #right_column #left_column {display:none}
 }
 
 #gridWrapper{
-	padding-top: 40px;
+	padding-top: 10px;
 }
 
 #center_column{
@@ -2408,6 +2421,7 @@ body#index #right_column #left_column {display:none}
 	left: 300px;
 	position: absolute;
 	width: 100px;
+	cursor: pointer;
 }
 
 /* HACKKK */
@@ -2495,4 +2509,28 @@ body#index #right_column #left_column {display:none}
 
 #rowText {
 padding-left: 28px;
+}
+
+#authentication h1 {
+	display: none;
+}
+
+
+/*************
+ Account Page
+*************/
+
+#my-account #breadcrumb {
+	display: none;
+}
+
+#accountPageLeft {
+	display: inline-block;
+	float: left;
+}
+
+#accountPageRight {
+	display: inline-block;
+	float: left;
+	padding: 9px 20px 20px 35px;
 }

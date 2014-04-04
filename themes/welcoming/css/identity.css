@@ -1,5 +1,9 @@
 #identity #left_column {display:none}
-#identity #center_column{width:757px}
+#identity #center_column {
+	width: 757px;
+	float: none;
+	margin: 0 auto 40px auto;
+}
 #identity h3 {
 	font-weight:normal;
 	font-size:13px;
@@ -56,6 +60,8 @@
 	background:none;
 	position: relative;
 	bottom: -3px;
+	float: none;
+	margin: 0px 4px 0px 8px;
 }
 #identity .std p.checkbox input {
 	position:relative;
