@@ -2546,3 +2546,9 @@ padding-left: 28px;
 	margin: 15px 0px;
 	font-family: proximaRegular;
 }
+
+#search #center_column {
+	width: 941px;
+	float: none;
+	margin: 0 auto;
+}
