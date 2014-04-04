@@ -2552,3 +2552,15 @@ padding-left: 28px;
 	float: none;
 	margin: 0 auto;
 }
+
+#search .productListBlock {
+	margin-right: 10px;
+}
+
+#search .productListBlock img {
+	margin-bottom: 15px;
+}
+
+#search #breadcrumb > span {
+	display: none;
+}
