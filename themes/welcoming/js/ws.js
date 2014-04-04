@@ -3,25 +3,30 @@ $(function() {
   $('#mainNavToggle').on('click', function(){
 
     if($('#mainNavToggle').hasClass('navSlide')) {
-      Slide.hide();
+      Slide.hideNav();
     } else {
-      Slide.show();
+      Slide.showNav();
     }
   });
 
-  DynamicPadding.padProdDesc();
-  $(window).resize(function(){
+  if($('#pb-left-column').length > 0) {
     DynamicPadding.padProdDesc();
-  });
+    $(window).resize(function(){
+      DynamicPadding.padProdDesc();
+    });
 
-  window.onscroll = ProdFixed.fixed;
+    window.onscroll = ProdFixed.fixed;
+  }
 
 });
 
 var ProdFixed = (function(){
+  if($('#pb-left-column').length > 0) {
+    var infoPos = $('#pb-left-column').position().top;
+  }
   function _fixed() {
     var prodInfo = document.getElementById("pb-left-column");
-    if (window.pageYOffset > $('#pb-left-column').position().top) {
+    if (window.pageYOffset > infoPos) {
         prodInfo.style.position = "fixed";
         prodInfo.style.top = "30px";
     } else {
@@ -48,7 +53,7 @@ var DynamicPadding = (function() {
 }());
 
 var Slide = (function(){
-  function _show() {
+  function _showNav() {
     $( "#mainNavToggle" ).animate({
         left: "-=100",
       }, 300);
@@ -62,7 +67,7 @@ var Slide = (function(){
       });
   }
 
-  function _hide() {
+  function _hideNav() {
     $( "#mainNavToggle" ).animate({
         left: "+=100",
       }, 300);
@@ -78,7 +83,7 @@ var Slide = (function(){
   }
 
   return {
-    show: _show,
-    hide: _hide
+    showNav: _showNav,
+    hideNav: _hideNav
   }
 }());

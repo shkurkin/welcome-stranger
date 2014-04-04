@@ -107,6 +107,7 @@
                                         </div>
                                         <!-- /MAIN DROPDOWN NAV -->
                                         <!-- LOGO -->
+                                        <a name="top"></a>
                                             {$HOOK_TOP}
                                         <!-- /LOGO -->
                                     </div>
